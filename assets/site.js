@@ -65,30 +65,11 @@
     manage && manage.addEventListener("click", function(e){ e.preventDefault(); openBanner(); });
   }
 
+  // Envoi classique vers FormSubmit (pas d'AJAX) : FormSubmit redirige ensuite vers /merci/.
   document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function(form){
-    form.addEventListener("submit", function(e){
-      e.preventDefault();
+    form.addEventListener("submit", function(){
       var submitBtn=form.querySelector('button[type="submit"]');
-      if(submitBtn) submitBtn.disabled=true;
-      var ajaxUrl=form.action.replace("formsubmit.co/","formsubmit.co/ajax/");
-      fetch(ajaxUrl,{
-        method:"POST",
-        headers:{"Content-Type":"application/x-www-form-urlencoded","Accept":"application/json"},
-        body:new URLSearchParams(new FormData(form)).toString()
-      }).then(function(r){
-        if(!r.ok) throw new Error("submit failed");
-        form.innerHTML='<p class="fsuccess">Merci, votre demande a bien été envoyée. Vous serez recontacté rapidement. Pour une urgence, appelez le <a href="tel:+33676225240">06 76 22 52 40</a>.</p>';
-        if(typeof gtag==="function"){
-          gtag('event', 'conversion', {
-              'send_to': 'AW-18446338192/SJFBCPuy6_scEJCR89tE',
-              'value': 1.0,
-              'currency': 'EUR'
-          });
-        }
-      }).catch(function(){
-        if(submitBtn) submitBtn.disabled=false;
-        alert("Une erreur est survenue lors de l'envoi. Merci d'appeler directement le 06 76 22 52 40.");
-      });
+      if(submitBtn){ submitBtn.disabled=true; submitBtn.textContent="Envoi en cours..."; }
     });
   });
 })();
