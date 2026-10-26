@@ -4,19 +4,13 @@
   var burgerOpen=document.getElementById("burger-open");
   var burgerClose=document.getElementById("burger-close");
   var mnav=document.getElementById("mnav");
-  function openMenu(){mnav.classList.add("open"); document.body.style.overflow="hidden"; burgerOpen.setAttribute("aria-expanded","true");}
-  function closeMenu(){mnav.classList.remove("open"); document.body.style.overflow=""; burgerOpen.setAttribute("aria-expanded","false");}
-  burgerOpen && burgerOpen.addEventListener("click", openMenu);
+  function openMenu(){mnav.classList.add("open"); document.body.classList.add("menu-open"); burgerOpen.setAttribute("aria-expanded","true"); burgerOpen.setAttribute("aria-label","Fermer le menu");}
+  function closeMenu(){mnav.classList.remove("open"); document.body.classList.remove("menu-open"); burgerOpen.setAttribute("aria-expanded","false"); burgerOpen.setAttribute("aria-label","Ouvrir le menu");}
+  burgerOpen && burgerOpen.addEventListener("click", function(){ mnav.classList.contains("open") ? closeMenu() : openMenu(); });
   burgerClose && burgerClose.addEventListener("click", closeMenu);
+  mnav && mnav.addEventListener("click", function(e){ if(e.target===mnav) closeMenu(); });
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && mnav && mnav.classList.contains("open")) closeMenu(); });
   mnav && mnav.querySelectorAll("a").forEach(function(a){a.addEventListener("click", closeMenu);});
-
-  var sticky=document.getElementById("sticky-cta");
-  var hero=document.getElementById("accueil");
-  if(sticky && hero && "IntersectionObserver" in window){
-    new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ sticky.classList.toggle("show", !e.isIntersecting); });
-    }, {rootMargin:"-75% 0px 0px 0px"}).observe(hero);
-  }
 
   var modal=document.getElementById("quote-modal");
   var quoteButtons=document.querySelectorAll(".svc-quote");
