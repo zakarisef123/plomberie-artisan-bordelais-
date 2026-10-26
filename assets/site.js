@@ -98,3 +98,15 @@
     });
   });
 })();
+
+(function(){
+  var links=document.querySelectorAll('[data-lightbox]');
+  if(!links.length || typeof HTMLDialogElement!=='function') return;
+  var d=document.createElement('dialog'); d.className='lightbox';
+  d.innerHTML='<button type="button" class="lightbox-close" aria-label="Fermer">&times;</button><img alt=""><p></p>';
+  document.body.appendChild(d);
+  var img=d.querySelector('img'), cap=d.querySelector('p');
+  d.querySelector('.lightbox-close').addEventListener('click',function(){d.close();});
+  d.addEventListener('click',function(e){ if(e.target===d) d.close(); });
+  links.forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); img.src=a.getAttribute('href'); img.alt=a.getAttribute('data-caption')||''; cap.textContent=a.getAttribute('data-caption')||''; d.showModal(); }); });
+})();
