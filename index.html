@@ -51,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=fa4263a238">
+<link rel="stylesheet" href="/assets/style.css?v=dea5b1ba2d">
 <title>Plombier Bordeaux &amp; Gironde (33) | L'Artisan Plombier Girondin</title>
 <meta name="description" content="Réseau d&#x27;artisans plombiers dans toute la Gironde (33), 10 ans d&#x27;expérience : fuite, débouchage, chauffe-eau, sanitaire, dégât des eaux. Un seul numéro, l&#x27;artisan le plus proche intervient. Prix annoncé avant travaux, 7j/7.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -308,7 +308,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         06 76 22 52 40
       </a>
       <button type="button" class="burger" id="burger-open" aria-label="Ouvrir le menu" aria-controls="mnav" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
       </button>
     </div>
   </div>
@@ -446,6 +447,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <section class="urgent-band" aria-label="Urgence plomberie">
+    <div class="container urgent-band-row">
+      <div class="urgent-band-text">
+        <strong><span class="urgent-dot" aria-hidden="true"></span>Une urgence plomberie ?</strong>
+        <div class="urgent-chips"><a href="/urgence-plombier/" class="urgent-chip">Fuite d'eau</a><a href="/degat-des-eaux/" class="urgent-chip">Dégât des eaux</a><a href="/debouchage-canalisation/" class="urgent-chip">WC bouché</a><a href="/chauffe-eau/" class="urgent-chip">Chauffe-eau qui fuit</a></div>
+      </div>
+      <div class="urgent-band-actions">
+        <a href="/urgence-plombier/" class="urgent-band-link">Que faire maintenant <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+        <a href="tel:+33676225240" class="urgent-band-call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> Appeler</a>
+      </div>
+    </div>
+  </section>
+
   <section class="insurance-section" aria-label="Assurances">
     <div class="container">
       <div class="insurance-head">
@@ -454,6 +468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>En cas de sinistre (dégât des eaux, fuite...), la facture détaillée remise après intervention est acceptée par les compagnies d'assurance habitation, mutuelles et banques-assureurs, notamment :</p>
       </div>
       <div class="insurance-logos">
+        <div class="ins-track">
         <span class="insurance-logo"><img src="/images/assurances/axa.jpg" alt="AXA" loading="lazy"></span>
         <span class="insurance-logo"><img src="/images/assurances/allianz.png" alt="Allianz" loading="lazy"></span>
         <span class="insurance-logo"><img src="/images/assurances/generali.png" alt="Generali" loading="lazy"></span>
@@ -492,7 +507,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="insurance-logo"><img src="/images/assurances/banque-populaire.png" alt="Banque Populaire" loading="lazy"></span>
         <span class="insurance-logo"><img src="/images/assurances/caisse-epargne.png" alt="Caisse d'Épargne" loading="lazy"></span>
         <span class="insurance-logo"><img src="/images/assurances/la-banque-postale-assurances.png" alt="La Banque Postale Assurances" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/axa.jpg" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/allianz.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/generali.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/maif.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/macif.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/maaf.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/matmut.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/groupama.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/gan-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/amaguiz.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/macsf.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/direct-assurance.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/leocare.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/covea.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/thelem-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/la-mae.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/swiss-life.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/abeille-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/ag2r-la-mondiale.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/mgen.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/hiscox-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/april.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/lolivier-assurance.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/assu-2000.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/euro-assurance.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/acheel.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/lovys.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/luko.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/sogessur.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/credit-agricole-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/credit-mutuel.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/cic-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/bnp-paribas.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/societe-generale-assurances.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/lcl.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/banque-populaire.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/caisse-epargne.png" alt="" loading="lazy"></span>
+        <span class="insurance-logo ins-dup" aria-hidden="true"><img src="/images/assurances/la-banque-postale-assurances.png" alt="" loading="lazy"></span>
+        </div>
       </div>
+      <p class="ins-hint">38 assureurs, mutuelles et banques-assureurs</p>
     </div>
   </section>
 
@@ -989,11 +1044,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<div id="sticky-cta" class="sticky-cta">
-  <a href="tel:+33676225240">
+<div id="sticky-cta" class="sticky-cta mobile-callbar" role="complementary" aria-label="Appeler un plombier">
+  <a href="tel:+33676225240" class="callbar-call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-    <span><span style="display:block;font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:#c8c4ba;">Appeler l'artisan</span><strong>06 76 22 52 40</strong></span>
+    <span><span class="callbar-label">Appeler un plombier</span><strong>06 76 22 52 40</strong></span>
   </a>
+  <button type="button" class="callbar-quote svc-quote" data-service="Demande de devis">Devis</button>
 </div>
 
 <a href="tel:+33676225240" class="float-call" aria-label="Appeler le plombier">
@@ -1041,6 +1097,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<script src="/assets/site.js?v=26951943e6" defer></script>
+<script src="/assets/site.js?v=14b16a7481" defer></script>
 </body>
 </html>

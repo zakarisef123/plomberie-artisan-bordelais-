@@ -51,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=fa4263a238">
+<link rel="stylesheet" href="/assets/style.css?v=dea5b1ba2d">
 <title>Zones d'intervention : plombier dans toute la Gironde | L'Artisan Plombier Girondin</title>
 <meta name="description" content="Plombier dans toute la Gironde : Bordeaux Métropole, Bassin d&#x27;Arcachon, Médoc, Libournais, Haute-Gironde, Entre-deux-Mers et Sud-Gironde. L&#x27;artisan du réseau le plus proche intervient.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -248,7 +248,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         06 76 22 52 40
       </a>
       <button type="button" class="burger" id="burger-open" aria-label="Ouvrir le menu" aria-controls="mnav" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
       </button>
     </div>
   </div>
@@ -489,11 +490,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<div id="sticky-cta" class="sticky-cta">
-  <a href="tel:+33676225240">
+<div id="sticky-cta" class="sticky-cta mobile-callbar" role="complementary" aria-label="Appeler un plombier">
+  <a href="tel:+33676225240" class="callbar-call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-    <span><span style="display:block;font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:#c8c4ba;">Appeler l'artisan</span><strong>06 76 22 52 40</strong></span>
+    <span><span class="callbar-label">Appeler un plombier</span><strong>06 76 22 52 40</strong></span>
   </a>
+  <button type="button" class="callbar-quote svc-quote" data-service="Demande de devis">Devis</button>
 </div>
 
 <a href="tel:+33676225240" class="float-call" aria-label="Appeler le plombier">
@@ -541,6 +543,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<script src="/assets/site.js?v=26951943e6" defer></script>
+<script src="/assets/site.js?v=14b16a7481" defer></script>
 </body>
 </html>
