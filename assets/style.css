@@ -494,7 +494,7 @@ nav.main-nav .nav-drop-panel a.nav-drop-all{display:flex; align-items:center; ju
   .mobile-callbar .callbar-call{flex:1; display:flex; align-items:center; justify-content:center; gap:.7rem; background:var(--brass-dark); color:#fff; text-decoration:none; padding:.7rem 1rem; border-radius:14px; box-shadow:0 6px 14px rgba(18,95,133,.28);}
   .mobile-callbar .callbar-call svg{color:#fff; animation:callbar-ring 2.6s ease-in-out infinite;}
   .mobile-callbar .callbar-label{display:block; font-size:.62rem; text-transform:uppercase; letter-spacing:.1em; color:#d6ecf6;}
-  .mobile-callbar strong{display:block; font-family:"Inter",sans-serif; font-size:1.08rem; font-weight:800; letter-spacing:.02em;}
+  .mobile-callbar strong{display:block; font-family:"Inter",sans-serif; font-size:1.08rem; font-weight:800; letter-spacing:.02em; color:#fff;}
   .mobile-callbar .callbar-quote{flex:0 0 auto; background:#fff; color:var(--ink); border:2px solid var(--ink); border-radius:14px; padding:0 1.1rem; font-weight:700; font-size:.92rem; font-family:inherit; cursor:pointer;}
   body{padding-bottom:84px;}
   .cmp{bottom:92px;}
